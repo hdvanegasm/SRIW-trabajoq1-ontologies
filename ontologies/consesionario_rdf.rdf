@@ -1,0 +1,531 @@
+<!DOCTYPE definition [
+<!ENTITY cons "http://www.consesionario_rdf.org#">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:cons="http://www.consesionario_rdf.org#">
+
+
+
+	<!-- Classes -->
+	
+	<rdfs:Class rdf:about="&cons;Proveedor">
+	</rdfs:Class>
+
+	<rdfs:Class rdf:about="&cons;Comprador">
+		<rdfs:subClassOf rdf:resource="&cons;Persona" />
+	</rdfs:Class>
+
+	<rdfs:Class rdf:about="&cons;Vendedor">
+		<rdfs:subClassOf rdf:resource="&cons;Persona" />
+	</rdfs:Class>
+
+	<rdfs:Class rdf:about="&cons;Carro">
+	</rdfs:Class>
+
+	<rdfs:Class rdf:about="&cons;Ciudad">
+	</rdfs:Class>
+
+	<rdfs:Class rdf:about="&cons;Motor">
+	</rdfs:Class>
+
+	<rdfs:Class rdf:about="&cons;Persona">
+	</rdfs:Class>
+
+
+
+	<!-- Properties -->
+
+	<!-- Carro -->
+
+	<rdfs:Property rdf:about="&cons;Placa">
+		<rdfs:domain rdf:resource="&cons;Carro" />
+		<rdfs:range rdf:resource="&xsd;string" />
+	</rdfs:Property>
+
+	<rdfs:Property rdf:about="&cons;Modelo">
+		<rdfs:domain rdf:resource="&cons;Carro" />
+		<rdfs:range rdf:resource="&xsd;string" />
+	</rdfs:Property>
+
+	<rdfs:Property rdf:about="&cons;Numero_puertas">
+		<rdfs:domain rdf:resource="&cons;Carro" />
+		<rdfs:range rdf:resource="&xsd;int" />
+	</rdfs:Property>
+
+	<rdfs:Property rdf:about="&cons;Tipo_combustible">
+		<rdfs:domain rdf:resource="&cons;Carro" />
+		<rdfs:range rdf:resource="&xsd;string" />
+	</rdfs:Property>
+
+
+	<!-- Motor -->
+
+	<rdfs:Property rdf:about="&cons;Desplazamiento">
+		<rdfs:domain rdf:resource="&cons;Motor" />
+		<rdfs:range rdf:resource="&xsd;double" />
+	</rdfs:Property>
+
+	<rdfs:Property rdf:about="&cons;ID">
+		<rdfs:domain rdf:resource="&cons;Motor" />
+		<rdfs:range rdf:resource="&xsd;string" />
+	</rdfs:Property>
+
+	<!-- Persona -->
+
+	<rdfs:Property rdf:about="&cons;Cedula">
+		<rdfs:domain rdf:resource="&cons;Persona" />
+		<rdfs:range rdf:resource="&xsd;int" />
+	</rdfs:Property>
+
+	<rdfs:Property rdf:about="&cons;Nombre">
+		<rdfs:domain rdf:resource="&cons;Persona" />
+		<rdfs:range rdf:resource="&xsd;string" />
+	</rdfs:Property>
+
+	<!-- Proveedor -->
+
+	<rdfs:Property rdf:about="&cons;Nit">
+		<rdfs:domain rdf:resource="&cons;Proveedor" />
+		<rdfs:range rdf:resource="&xsd;int" />
+	</rdfs:Property>
+
+	<rdfs:Property rdf:about="&cons;Nombre_proveedor">
+		<rdfs:domain rdf:resource="&cons;Proveedor" />
+		<rdfs:range rdf:resource="&xsd;string" />
+	</rdfs:Property>
+
+	<!-- Comprador -->
+
+	<rdfs:Property rdf:about="&cons;Direccion">
+		<rdfs:domain rdf:resource="&cons;Comprador" />
+		<rdfs:range rdf:resource="&xsd;string" />
+	</rdfs:Property>
+	<rdfs:Property rdf:about="&cons;Salario">
+		<rdfs:domain rdf:resource="&cons;Comprador" />
+		<rdfs:range rdf:resource="&xsd;int" />
+	</rdfs:Property>
+
+	<!-- Vendedor -->
+
+	<rdfs:Property rdf:about="&cons;Horas_trabajo">
+		<rdfs:domain rdf:resource="&cons;Vendedor" />
+		<rdfs:range rdf:resource="&xsd;int" />
+	</rdfs:Property>
+	<rdfs:Property rdf:about="&cons;Meses_vinculacion">
+		<rdfs:domain rdf:resource="&cons;Vendedor" />
+		<rdfs:range rdf:resource="&xsd;int" />
+	</rdfs:Property>
+
+
+	<!-- Ciudad -->
+
+	<rdfs:Property rdf:about="&cons;Codigo_postal">
+		<rdfs:domain rdf:resource="&cons;Ciudad" />
+		<rdfs:range rdf:resource="&xsd;Int" />
+	</rdfs:Property>
+
+	<rdfs:Property rdf:about="&cons;Poblacion">
+		<rdfs:domain rdf:resource="&cons;Ciudad" />
+		<rdfs:range rdf:resource="&xsd;int" />
+	</rdfs:Property>
+
+
+
+	<!-- Relaciones -->
+	
+	<rdfs:Property rdf:about="&cons;Comprado_por">
+		<rdfs:domain rdf:resource="&cons;Carro" />
+		<rdfs:range rdf:resource="&cons;Comprador" />
+	</rdfs:Property>
+
+	<rdfs:Property rdf:about="&cons;Atiende">
+		<rdfs:domain rdf:resource="&cons;Vendedor" />
+		<rdfs:range rdf:resource="&cons;Comprador" />
+	</rdfs:Property>
+
+	<rdfs:Property rdf:about="&cons;Atendido_por">
+		<rdfs:domain rdf:resource="&cons;Comprador" />
+		<rdfs:range rdf:resource="&cons;Vendedor" />
+	</rdfs:Property>
+
+	<rdfs:Property rdf:about="&cons;Compra">
+		<rdfs:domain rdf:resource="&cons;Comprador" />
+		<rdfs:range rdf:resource="&cons;Carro" />
+	</rdfs:Property>
+
+	<rdfs:Property rdf:about="&cons;Vendido_por">
+		<rdfs:domain rdf:resource="&cons;Carro" />
+		<rdfs:range rdf:resource="&cons;Vendedor" />
+	</rdfs:Property>
+
+	<rdfs:Property rdf:about="&cons;Vendedor_de">
+		<rdfs:domain rdf:resource="&cons;Vendedor" />
+		<rdfs:range rdf:resource="&cons;Carro" />
+	</rdfs:Property>
+
+	<rdfs:Property rdf:about="&cons;Proveedor_de">
+		<rdfs:domain rdf:resource="&cons;Proveedor" />
+		<rdfs:range rdf:resource="&cons;Carro" />
+	</rdfs:Property>
+
+	<rdfs:Property rdf:about="&cons;Proveido_por">
+		<rdfs:domain rdf:resource="&cons;Carro" />
+		<rdfs:range rdf:resource="&cons;Proveedor" />
+	</rdfs:Property>
+
+	<rdfs:Property rdf:about="&cons;Motor_de">
+		<rdfs:domain rdf:resource="&cons;Motor" />
+		<rdfs:range rdf:resource="&cons;Carro" />
+	</rdfs:Property>
+
+	<rdfs:Property rdf:about="&cons;Motorizado_por">
+		<rdfs:domain rdf:resource="&cons;Carro" />
+		<rdfs:range rdf:resource="&cons;Motor" />
+	</rdfs:Property>
+
+	<rdfs:Property rdf:about="&cons;Lugar_de_ensamblado_de">
+		<rdfs:domain rdf:resource="&cons;Ciudad" />
+		<rdfs:range rdf:resource="&cons;Motor" />
+	</rdfs:Property>
+
+	<rdfs:Property rdf:about="&cons;Ensamblado_en">
+		<rdfs:domain rdf:resource="&cons;Carro" />
+		<rdfs:range rdf:resource="&cons;Ciudad" />
+	</rdfs:Property>
+
+	<!-- Instances -->
+	
+	<!-- Proveedor -->
+
+	<rdf:Description rdf:about="&cons;Suzuki">
+		<rdf:type rdf:resource="&cons;Proveedor" />
+		<cons:Nombre_proveedor>Suzuki</cons:Nombre_proveedor>
+		<cons:Nit>12341234</cons:Nit>
+		<cons:Proveedor_de>
+			<rdf:Bag>
+				<rdf:li>SUZ124</rdf:li>
+			</rdf:Bag>
+		</cons:Proveedor_de>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="&cons;BMW">
+		<rdf:type rdf:resource="&cons;Proveedor" />
+		<cons:Nombre_proveedor>BMW</cons:Nombre_proveedor>
+		<cons:Nit>23452345</cons:Nit>
+		<cons:Proveedor_de>
+			<rdf:Bag>
+				<rdf:li>BMW325</rdf:li>
+			</rdf:Bag>
+		</cons:Proveedor_de>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="&cons;Honda">
+		<rdf:type rdf:resource="&cons;Proveedor" />
+		<cons:Nombre_proveedor>Honda</cons:Nombre_proveedor>
+		<cons:Nit>34563456</cons:Nit>
+		<cons:Proveedor_de>
+			<rdf:Bag>
+				<rdf:li>HON346</rdf:li>
+			</rdf:Bag>
+		</cons:Proveedor_de>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="&cons;Nissan">
+		<rdf:type rdf:resource="&cons;Proveedor" />
+		<cons:Nombre_proveedor>Nissan</cons:Nombre_proveedor>
+		<cons:Nit>45674567</cons:Nit>
+		<cons:Proveedor_de>
+			<rdf:Bag>
+				<rdf:li>NIS865</rdf:li>
+			</rdf:Bag>
+		</cons:Proveedor_de>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="&cons;Subaru">
+		<rdf:type rdf:resource="&cons;Proveedor" />
+		<cons:Nombre_proveedor>Subaru</cons:Nombre_proveedor>
+		<cons:Nit>56785678</cons:Nit>
+		<cons:Proveedor_de>
+			<rdf:Bag>
+				<rdf:li>STI123</rdf:li>
+			</rdf:Bag>
+		</cons:Proveedor_de>
+	</rdf:Description>
+
+
+<!-- Carro  -->
+
+	<rdf:Description rdf:about="&cons;BMW325">
+		<rdf:type rdf:resource="&cons;Carro" />
+		<cons:Placa>BMW325</cons:Placa>
+		<cons:Modelo>M3</cons:Modelo>
+		<cons:Comprado_por>Daniel</cons:Comprado_por>
+		<cons:Vendido_por>Juan</cons:Vendido_por>
+		<cons:Proveido_por>BMW</cons:Proveido_por>
+		<cons:Numero_puertas>4</cons:Numero_puertas>
+		<cons:Tipo_combustible>Gasolina</cons:Tipo_combustible>
+		<cons:Motorizado_por>6L</cons:Motorizado_por>
+		<cons:Ensamblado_en>Amsterdam</cons:Ensamblado_en>
+	</rdf:Description>
+
+
+	<rdf:Description rdf:about="&cons;HON346">
+		<rdf:type rdf:resource="&cons;Carro" />
+		<cons:Placa>HON346</cons:Placa>
+		<cons:Modelo>Accord</cons:Modelo>
+		<cons:Comprado_por>Santiago</cons:Comprado_por>
+		<cons:Vendido_por>David</cons:Vendido_por>
+		<cons:Proveido_por>Honda</cons:Proveido_por>
+		<cons:Numero_puertas>4</cons:Numero_puertas>
+		<cons:Tipo_combustible>Diesel</cons:Tipo_combustible>
+		<cons:Motorizado_por>V6D</cons:Motorizado_por>
+		<cons:Ensamblado_en>Roma</cons:Ensamblado_en>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="&cons;STI123">
+		<rdf:type rdf:resource="&cons;Carro" />
+		<cons:Placa>STI123</cons:Placa>
+		<cons:Modelo>WRX STi</cons:Modelo>
+		<cons:Comprado_por>Edwin</cons:Comprado_por>
+		<cons:Vendido_por>Pedro</cons:Vendido_por>
+		<cons:Proveido_por>Subaru</cons:Proveido_por>
+		<cons:Numero_puertas>4</cons:Numero_puertas>
+		<cons:Tipo_combustible>Gasolina</cons:Tipo_combustible>
+		<cons:Motorizado_por>4L</cons:Motorizado_por>
+		<cons:Ensamblado_en>Medellín</cons:Ensamblado_en>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="&cons;NIS865">
+		<rdf:type rdf:resource="&cons;Carro" />
+		<cons:Placa>NIS865</cons:Placa>
+		<cons:Modelo>GTR</cons:Modelo>
+		<cons:Comprado_por>Mario</cons:Comprado_por>
+		<cons:Vendido_por>Carlos</cons:Vendido_por>
+		<cons:Proveido_por>Nissan</cons:Proveido_por>
+		<cons:Numero_puertas>2</cons:Numero_puertas>
+		<cons:Tipo_combustible>Gasolina</cons:Tipo_combustible>
+		<cons:Motorizado_por>V8</cons:Motorizado_por>
+		<cons:Ensamblado_en>Bogota</cons:Ensamblado_en>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="&cons;SUZ124">
+		<rdf:type rdf:resource="&cons;Carro" />
+		<cons:Placa>SUZ124</cons:Placa>
+		<cons:Modelo>Vitara</cons:Modelo>
+		<cons:Comprado_por>Hernan</cons:Comprado_por>
+		<cons:Vendido_por>Pablo</cons:Vendido_por>
+		<cons:Proveido_por>Suzuki</cons:Proveido_por>
+		<cons:Numero_puertas>4</cons:Numero_puertas>
+		<cons:Tipo_combustible>Diesel</cons:Tipo_combustible>
+		<cons:Motorizado_por>4LD</cons:Motorizado_por>
+		<cons:Ensamblado_en>Cali</cons:Ensamblado_en>
+	</rdf:Description>
+
+	<!-- Comprador  -->
+
+	<rdf:Description rdf:about="&cons;Edwin">
+		<rdf:type rdf:resource="&cons;Comprador" />
+		<cons:Cedula>5432</cons:Cedula>
+		<cons:Nombre>Edwin</cons:Nombre>
+		<cons:Direccion>Calle falsa 123</cons:Direccion>
+		<cons:Salario>7000000</cons:Salario>		
+		<cons:Atendido_por>Pedro</cons:Atendido_por>
+		<cons:Compra>
+			<rdf:Bag>
+				<rdf:li>STI123</rdf:li>
+			</rdf:Bag></cons:Compra>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="&cons;Mario">
+		<rdf:type rdf:resource="&cons;Comprador" />
+		<cons:Cedula>6543</cons:Cedula>
+		<cons:Nombre>Mario</cons:Nombre>
+		<cons:Direccion>Calle falsa 234</cons:Direccion>
+		<cons:Salario>6000000</cons:Salario>
+		<cons:Atendido_por>Carlos</cons:Atendido_por>
+		<cons:Compra>
+			<rdf:Bag>
+				<rdf:li>NIS865</rdf:li>
+			</rdf:Bag></cons:Compra>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="&cons;Santiago">
+		<rdf:type rdf:resource="&cons;Comprador" />
+		<cons:Cedula>7654</cons:Cedula>
+		<cons:Nombre>Santiago</cons:Nombre>
+		<cons:Direccion>Calle falsa 345</cons:Direccion>
+		<cons:Salario>7000000</cons:Salario>
+		<cons:Atendido_por>David</cons:Atendido_por>
+		<cons:Compra>
+			<rdf:Bag>
+				<rdf:li>HON346</rdf:li>
+			</rdf:Bag></cons:Compra>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="&cons;Daniel">
+		<rdf:type rdf:resource="&cons;Comprador" />
+		<cons:Cedula>8765</cons:Cedula>
+		<cons:Nombre>Daniel</cons:Nombre>
+		<cons:Direccion>Calle falsa 456</cons:Direccion>
+		<cons:Salario>7300000</cons:Salario>
+		<cons:Atendido_por>Juan</cons:Atendido_por>
+		<cons:Compra>
+			<rdf:Bag>
+				<rdf:li>BMW325</rdf:li>
+			</rdf:Bag></cons:Compra>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="&cons;Hernan">
+		<rdf:type rdf:resource="&cons;Comprador" />
+		<cons:Cedula>9876</cons:Cedula>
+		<cons:Nombre>Hernan</cons:Nombre>
+		<cons:Direccion>Calle falsa 567</cons:Direccion>
+		<cons:Salario>7500000</cons:Salario>
+		<cons:Atendido_por>Pablo</cons:Atendido_por>
+		<cons:Compra>
+			<rdf:Bag>
+				<rdf:li>SUZ124</rdf:li>
+			</rdf:Bag></cons:Compra>
+	</rdf:Description>
+
+	<!--  Vendedor -->
+
+	<rdf:Description rdf:about="&cons;Pedro">
+		<rdf:type rdf:resource="&cons;Vendedor" />
+		<cons:Cedula>1234</cons:Cedula>
+		<cons:Nombre>Pedro</cons:Nombre>
+		<cons:Horas_trabajo>4</cons:Horas_trabajo>
+		<cons:Meses_vinculacion>13</cons:Meses_vinculacion>
+		<cons:Atiende>Edwin</cons:Atiende>
+		<cons:Vendedor_de>
+			<rdf:Bag>
+				<rdf:li>STI123</rdf:li>
+			</rdf:Bag></cons:Vendedor_de>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="&cons;Carlos">
+		<rdf:type rdf:resource="&cons;Vendedor" />
+		<cons:Cedula>5678</cons:Cedula>
+		<cons:Nombre>Carlos</cons:Nombre>
+		<cons:Horas_trabajo>4</cons:Horas_trabajo>
+		<cons:Meses_vinculacion>26</cons:Meses_vinculacion>
+		<cons:Atiende>Mario</cons:Atiende>
+		<cons:Vendedor_de>
+			<rdf:Bag>
+				<rdf:li>NIS865</rdf:li>
+			</rdf:Bag></cons:Vendedor_de>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="&cons;David">
+		<rdf:type rdf:resource="&cons;Vendedor" />
+		<cons:Cedula>4567</cons:Cedula>
+		<cons:Nombre>David</cons:Nombre>
+		<cons:Horas_trabajo>8</cons:Horas_trabajo>
+		<cons:Meses_vinculacion>1</cons:Meses_vinculacion>
+		<cons:Atiende>Santiago</cons:Atiende>
+		<cons:Vendedor_de>
+			<rdf:Bag>
+				<rdf:li>HON346</rdf:li>
+			</rdf:Bag></cons:Vendedor_de>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="&cons;Juan">
+		<rdf:type rdf:resource="&cons;Vendedor" />
+		<cons:Cedula>3456</cons:Cedula>
+		<cons:Nombre>Juan</cons:Nombre>
+		<cons:Horas_trabajo>8</cons:Horas_trabajo>
+		<cons:Meses_vinculacion>2</cons:Meses_vinculacion>
+		<cons:Atiende>Daniel</cons:Atiende>
+		<cons:Vendedor_de>
+			<rdf:Bag>
+				<rdf:li>BMW325</rdf:li>
+			</rdf:Bag></cons:Vendedor_de>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="&cons;Pablo">
+		<rdf:type rdf:resource="&cons;Vendedor" />
+		<cons:Cedula>2345</cons:Cedula>
+		<cons:Nombre>Pablo</cons:Nombre>
+		<cons:Horas_trabajo>6</cons:Horas_trabajo>
+		<cons:Meses_vinculacion>15</cons:Meses_vinculacion>
+		<cons:Atiende>Hernan</cons:Atiende>
+		<cons:Vendedor_de>
+			<rdf:Bag>
+				<rdf:li>SUZ124</rdf:li>
+			</rdf:Bag></cons:Vendedor_de>
+	</rdf:Description>
+
+<!--  Motor   -->
+
+	<rdf:Description rdf:about="&cons;4L">
+		<rdf:type rdf:resource="&cons;Motor" />
+		<cons:ID>1234</cons:ID>
+		<cons:Desplazamiento>2000</cons:Desplazamiento>
+		<cons:Motor_de>STI123</cons:Motor_de>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="&cons;6L">
+		<rdf:type rdf:resource="&cons;Motor" />
+		<cons:ID>2345</cons:ID>
+		<cons:Desplazamiento>2500</cons:Desplazamiento>
+		<cons:Motor_de>BMW325</cons:Motor_de>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="&cons;V8">
+		<rdf:type rdf:resource="&cons;Motor" />
+		<cons:ID>3456</cons:ID>
+		<cons:Desplazamiento>5600</cons:Desplazamiento>
+		<cons:Motor_de>NIS865</cons:Motor_de>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="&cons;V6D">
+		<rdf:type rdf:resource="&cons;Motor" />
+		<cons:ID>4567</cons:ID>
+		<cons:Desplazamiento>3500</cons:Desplazamiento>
+		<cons:Motor_de>HON346</cons:Motor_de>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="&cons;4LD">
+		<rdf:type rdf:resource="&cons;Motor" />
+		<cons:ID>5678</cons:ID>
+		<cons:Desplazamiento>1600</cons:Desplazamiento>
+		<cons:Motor_de>SUZ124</cons:Motor_de>
+	</rdf:Description>
+
+<!--  Ciudad  -->
+
+	<rdf:Description rdf:about="&cons;Medellín">
+		<rdf:type rdf:resource="&cons;Ciudad" />
+		<cons:Codigo_postal>1234</cons:Codigo_postal>
+		<cons:Poblacion>12341234</cons:Poblacion>
+		<cons:Lugar_de_ensamblado_de>STI123</cons:Lugar_de_ensamblado_de>		
+	</rdf:Description>
+
+	<rdf:Description rdf:about="&cons;Amsterdan">
+		<rdf:type rdf:resource="&cons;Ciudad" />
+		<cons:Codigo_postal>2345</cons:Codigo_postal>
+		<cons:Lugar_de_ensamblado_de>BMW325</cons:Lugar_de_ensamblado_de>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="&cons;Roma">
+		<rdf:type rdf:resource="&cons;Ciudad" />
+		<cons:Codigo_postal>3456</cons:Codigo_postal>
+		<cons:Lugar_de_ensamblado_de>HON346</cons:Lugar_de_ensamblado_de>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="&cons;Cali">
+		<rdf:type rdf:resource="&cons;Ciudad" />
+		<cons:Codigo_postal>4567</cons:Codigo_postal>
+		<cons:Lugar_de_ensamblado_de>SUZ124</cons:Lugar_de_ensamblado_de>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="&cons;Bogota">
+		<rdf:type rdf:resource="&cons;Ciudad" />
+		<cons:Codigo_postal>5678</cons:Codigo_postal>
+		<cons:Lugar_de_ensamblado_de>NIS865</cons:Lugar_de_ensamblado_de>
+	</rdf:Description>
+
+</rdf:RDF>

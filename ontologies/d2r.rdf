@@ -1,0 +1,348 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:db="http://localhost:37654/resource/"
+    xmlns:map="http://localhost:37654/resource/#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.0="http://localhost:37654/resource/vocab/vendedor_Meses%20"
+    xmlns:vocab="http://localhost:37654/resource/vocab/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <vocab:proveedor rdf:about="http://localhost:37654/resource/proveedor/5005">
+    <vocab:proveedor_Nombre>Chevrolet</vocab:proveedor_Nombre>
+    <rdfs:label>proveedor #5005</rdfs:label>
+    <vocab:proveedor_Nit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >5005</vocab:proveedor_Nit>
+  </vocab:proveedor>
+  <vocab:ciudad rdf:about="http://localhost:37654/resource/ciudad/2000">
+    <vocab:ciudad_Poblacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >7653431</vocab:ciudad_Poblacion>
+    <rdfs:label>ciudad #2000</rdfs:label>
+    <vocab:ciudad_Codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >2000</vocab:ciudad_Codigo_postal>
+  </vocab:ciudad>
+  <vocab:carro rdf:about="http://localhost:37654/resource/carro/ASD124">
+    <vocab:carro_Numero_Puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >2</vocab:carro_Numero_Puertas>
+    <vocab:carro_Cedula_Comprador>
+      <vocab:comprador rdf:about="http://localhost:37654/resource/comprador/202">
+        <vocab:comprador_Vendedor_Cedula>
+          <vocab:vendedor rdf:about="http://localhost:37654/resource/vendedor/102">
+            <vocab:vendedor_Cedula>
+              <vocab:persona rdf:about="http://localhost:37654/resource/persona/102">
+                <rdfs:label>persona #102</rdfs:label>
+                <vocab:persona_Tipo>V</vocab:persona_Tipo>
+                <vocab:persona_Nombre>Pedro</vocab:persona_Nombre>
+                <vocab:persona_Cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                >102</vocab:persona_Cedula>
+              </vocab:persona>
+            </vocab:vendedor_Cedula>
+            <rdfs:label>vendedor #102</rdfs:label>
+            <j.0:vinculacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >15</j.0:vinculacion>
+            <vocab:vendedor_Horas_trabajo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >5</vocab:vendedor_Horas_trabajo>
+          </vocab:vendedor>
+        </vocab:comprador_Vendedor_Cedula>
+        <vocab:comprador_Cedula>
+          <vocab:persona rdf:about="http://localhost:37654/resource/persona/202">
+            <rdfs:label>persona #202</rdfs:label>
+            <vocab:persona_Tipo>C</vocab:persona_Tipo>
+            <vocab:persona_Nombre>Hernan</vocab:persona_Nombre>
+            <vocab:persona_Cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >202</vocab:persona_Cedula>
+          </vocab:persona>
+        </vocab:comprador_Cedula>
+        <rdfs:label>comprador #202</rdfs:label>
+        <vocab:comprador_Direccion>Calle falsa 321</vocab:comprador_Direccion>
+        <vocab:comprador_Salario rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >8000000</vocab:comprador_Salario>
+      </vocab:comprador>
+    </vocab:carro_Cedula_Comprador>
+    <rdfs:label>carro #ASD124</rdfs:label>
+    <vocab:carro_NIT_Proveedor>
+      <vocab:proveedor rdf:about="http://localhost:37654/resource/proveedor/1001">
+        <vocab:proveedor_Nombre>BMW</vocab:proveedor_Nombre>
+        <rdfs:label>proveedor #1001</rdfs:label>
+        <vocab:proveedor_Nit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >1001</vocab:proveedor_Nit>
+      </vocab:proveedor>
+    </vocab:carro_NIT_Proveedor>
+    <vocab:carro_Modelo>NSX</vocab:carro_Modelo>
+    <vocab:carro_Codigo_Postal_Ciudad>
+      <vocab:ciudad rdf:about="http://localhost:37654/resource/ciudad/1000">
+        <vocab:ciudad_Poblacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >1413421</vocab:ciudad_Poblacion>
+        <rdfs:label>ciudad #1000</rdfs:label>
+        <vocab:ciudad_Codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >1000</vocab:ciudad_Codigo_postal>
+      </vocab:ciudad>
+    </vocab:carro_Codigo_Postal_Ciudad>
+    <vocab:carro_Placa>ASD124</vocab:carro_Placa>
+    <vocab:carro_Tipo_Combustible>Gasolina</vocab:carro_Tipo_Combustible>
+    <vocab:carro_ID_Motor>
+      <vocab:motor rdf:about="http://localhost:37654/resource/motor/2">
+        <rdfs:label>motor #2</rdfs:label>
+        <vocab:motor_Desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+        >2060.7E0</vocab:motor_Desplazamiento>
+        <vocab:motor_ID>2</vocab:motor_ID>
+      </vocab:motor>
+    </vocab:carro_ID_Motor>
+    <vocab:carro_Cedula_Vendedor rdf:resource="http://localhost:37654/resource/vendedor/102"/>
+  </vocab:carro>
+  <vocab:proveedor rdf:about="http://localhost:37654/resource/proveedor/4004">
+    <vocab:proveedor_Nombre>Ford</vocab:proveedor_Nombre>
+    <rdfs:label>proveedor #4004</rdfs:label>
+    <vocab:proveedor_Nit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >4004</vocab:proveedor_Nit>
+  </vocab:proveedor>
+  <vocab:carro rdf:about="http://localhost:37654/resource/carro/ASD126">
+    <rdfs:label>carro #ASD126</rdfs:label>
+    <vocab:carro_Cedula_Vendedor>
+      <vocab:vendedor rdf:about="http://localhost:37654/resource/vendedor/104">
+        <vocab:vendedor_Cedula>
+          <vocab:persona rdf:about="http://localhost:37654/resource/persona/104">
+            <rdfs:label>persona #104</rdfs:label>
+            <vocab:persona_Tipo>V</vocab:persona_Tipo>
+            <vocab:persona_Nombre>Pablo</vocab:persona_Nombre>
+            <vocab:persona_Cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >104</vocab:persona_Cedula>
+          </vocab:persona>
+        </vocab:vendedor_Cedula>
+        <rdfs:label>vendedor #104</rdfs:label>
+        <j.0:vinculacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >26</j.0:vinculacion>
+        <vocab:vendedor_Horas_trabajo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >3</vocab:vendedor_Horas_trabajo>
+      </vocab:vendedor>
+    </vocab:carro_Cedula_Vendedor>
+    <vocab:carro_ID_Motor>
+      <vocab:motor rdf:about="http://localhost:37654/resource/motor/4">
+        <rdfs:label>motor #4</rdfs:label>
+        <vocab:motor_Desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+        >2500.0E0</vocab:motor_Desplazamiento>
+        <vocab:motor_ID>4</vocab:motor_ID>
+      </vocab:motor>
+    </vocab:carro_ID_Motor>
+    <vocab:carro_Placa>ASD126</vocab:carro_Placa>
+    <vocab:carro_Cedula_Comprador>
+      <vocab:comprador rdf:about="http://localhost:37654/resource/comprador/204">
+        <vocab:comprador_Vendedor_Cedula rdf:resource="http://localhost:37654/resource/vendedor/104"/>
+        <vocab:comprador_Cedula>
+          <vocab:persona rdf:about="http://localhost:37654/resource/persona/204">
+            <rdfs:label>persona #204</rdfs:label>
+            <vocab:persona_Tipo>C</vocab:persona_Tipo>
+            <vocab:persona_Nombre>Santiago</vocab:persona_Nombre>
+            <vocab:persona_Cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >204</vocab:persona_Cedula>
+          </vocab:persona>
+        </vocab:comprador_Cedula>
+        <rdfs:label>comprador #204</rdfs:label>
+        <vocab:comprador_Direccion>Calle falsa 43</vocab:comprador_Direccion>
+        <vocab:comprador_Salario rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >6000000</vocab:comprador_Salario>
+      </vocab:comprador>
+    </vocab:carro_Cedula_Comprador>
+    <vocab:carro_Modelo>F150 Raptor</vocab:carro_Modelo>
+    <vocab:carro_Numero_Puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >4</vocab:carro_Numero_Puertas>
+    <vocab:carro_NIT_Proveedor rdf:resource="http://localhost:37654/resource/proveedor/1001"/>
+    <vocab:carro_Tipo_Combustible>Gasolina</vocab:carro_Tipo_Combustible>
+    <vocab:carro_Codigo_Postal_Ciudad rdf:resource="http://localhost:37654/resource/ciudad/1000"/>
+  </vocab:carro>
+  <vocab:ciudad rdf:about="http://localhost:37654/resource/ciudad/5000">
+    <vocab:ciudad_Poblacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >1243421</vocab:ciudad_Poblacion>
+    <rdfs:label>ciudad #5000</rdfs:label>
+    <vocab:ciudad_Codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >5000</vocab:ciudad_Codigo_postal>
+  </vocab:ciudad>
+  <vocab:ciudad rdf:about="http://localhost:37654/resource/ciudad/4000">
+    <vocab:ciudad_Poblacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >7653311</vocab:ciudad_Poblacion>
+    <rdfs:label>ciudad #4000</rdfs:label>
+    <vocab:ciudad_Codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >4000</vocab:ciudad_Codigo_postal>
+  </vocab:ciudad>
+  <vocab:proveedor rdf:about="http://localhost:37654/resource/proveedor/3003">
+    <vocab:proveedor_Nombre>Suzuki</vocab:proveedor_Nombre>
+    <rdfs:label>proveedor #3003</rdfs:label>
+    <vocab:proveedor_Nit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >3003</vocab:proveedor_Nit>
+  </vocab:proveedor>
+  <vocab:carro rdf:about="http://localhost:37654/resource/carro/ASD123">
+    <vocab:carro_Placa>ASD123</vocab:carro_Placa>
+    <vocab:carro_NIT_Proveedor rdf:resource="http://localhost:37654/resource/proveedor/1001"/>
+    <vocab:carro_Tipo_Combustible>Gasolina</vocab:carro_Tipo_Combustible>
+    <vocab:carro_Codigo_Postal_Ciudad rdf:resource="http://localhost:37654/resource/ciudad/1000"/>
+    <vocab:carro_Cedula_Comprador>
+      <vocab:comprador rdf:about="http://localhost:37654/resource/comprador/201">
+        <vocab:comprador_Vendedor_Cedula>
+          <vocab:vendedor rdf:about="http://localhost:37654/resource/vendedor/101">
+            <vocab:vendedor_Cedula>
+              <vocab:persona rdf:about="http://localhost:37654/resource/persona/101">
+                <rdfs:label>persona #101</rdfs:label>
+                <vocab:persona_Tipo>V</vocab:persona_Tipo>
+                <vocab:persona_Nombre>Juan</vocab:persona_Nombre>
+                <vocab:persona_Cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                >101</vocab:persona_Cedula>
+              </vocab:persona>
+            </vocab:vendedor_Cedula>
+            <rdfs:label>vendedor #101</rdfs:label>
+            <j.0:vinculacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >5</j.0:vinculacion>
+            <vocab:vendedor_Horas_trabajo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >4</vocab:vendedor_Horas_trabajo>
+          </vocab:vendedor>
+        </vocab:comprador_Vendedor_Cedula>
+        <vocab:comprador_Cedula>
+          <vocab:persona rdf:about="http://localhost:37654/resource/persona/201">
+            <rdfs:label>persona #201</rdfs:label>
+            <vocab:persona_Tipo>C</vocab:persona_Tipo>
+            <vocab:persona_Nombre>Alejandro</vocab:persona_Nombre>
+            <vocab:persona_Cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >201</vocab:persona_Cedula>
+          </vocab:persona>
+        </vocab:comprador_Cedula>
+        <rdfs:label>comprador #201</rdfs:label>
+        <vocab:comprador_Direccion>Calle falsa 123</vocab:comprador_Direccion>
+        <vocab:comprador_Salario rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >5000000</vocab:comprador_Salario>
+      </vocab:comprador>
+    </vocab:carro_Cedula_Comprador>
+    <rdfs:label>carro #ASD123</rdfs:label>
+    <vocab:carro_Cedula_Vendedor rdf:resource="http://localhost:37654/resource/vendedor/101"/>
+    <vocab:carro_Modelo>X3</vocab:carro_Modelo>
+    <vocab:carro_ID_Motor>
+      <vocab:motor rdf:about="http://localhost:37654/resource/motor/1">
+        <rdfs:label>motor #1</rdfs:label>
+        <vocab:motor_Desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+        >1300.0E0</vocab:motor_Desplazamiento>
+        <vocab:motor_ID>1</vocab:motor_ID>
+      </vocab:motor>
+    </vocab:carro_ID_Motor>
+    <vocab:carro_Numero_Puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >4</vocab:carro_Numero_Puertas>
+  </vocab:carro>
+  <vocab:ciudad rdf:about="http://localhost:37654/resource/ciudad/3000">
+    <vocab:ciudad_Poblacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >2413421</vocab:ciudad_Poblacion>
+    <rdfs:label>ciudad #3000</rdfs:label>
+    <vocab:ciudad_Codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >3000</vocab:ciudad_Codigo_postal>
+  </vocab:ciudad>
+  <vocab:proveedor rdf:about="http://localhost:37654/resource/proveedor/2002">
+    <vocab:proveedor_Nombre>Honda</vocab:proveedor_Nombre>
+    <rdfs:label>proveedor #2002</rdfs:label>
+    <vocab:proveedor_Nit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >2002</vocab:proveedor_Nit>
+  </vocab:proveedor>
+  <vocab:carro rdf:about="http://localhost:37654/resource/carro/ASD125">
+    <vocab:carro_Tipo_Combustible>Gasolina</vocab:carro_Tipo_Combustible>
+    <vocab:carro_Codigo_Postal_Ciudad rdf:resource="http://localhost:37654/resource/ciudad/1000"/>
+    <rdfs:label>carro #ASD125</rdfs:label>
+    <vocab:carro_Numero_Puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >4</vocab:carro_Numero_Puertas>
+    <vocab:carro_Placa>ASD125</vocab:carro_Placa>
+    <vocab:carro_NIT_Proveedor rdf:resource="http://localhost:37654/resource/proveedor/1001"/>
+    <vocab:carro_ID_Motor>
+      <vocab:motor rdf:about="http://localhost:37654/resource/motor/3">
+        <rdfs:label>motor #3</rdfs:label>
+        <vocab:motor_Desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+        >1800.0E0</vocab:motor_Desplazamiento>
+        <vocab:motor_ID>3</vocab:motor_ID>
+      </vocab:motor>
+    </vocab:carro_ID_Motor>
+    <vocab:carro_Cedula_Comprador>
+      <vocab:comprador rdf:about="http://localhost:37654/resource/comprador/203">
+        <vocab:comprador_Vendedor_Cedula>
+          <vocab:vendedor rdf:about="http://localhost:37654/resource/vendedor/103">
+            <vocab:vendedor_Cedula>
+              <vocab:persona rdf:about="http://localhost:37654/resource/persona/103">
+                <rdfs:label>persona #103</rdfs:label>
+                <vocab:persona_Tipo>V</vocab:persona_Tipo>
+                <vocab:persona_Nombre>Carlos</vocab:persona_Nombre>
+                <vocab:persona_Cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                >103</vocab:persona_Cedula>
+              </vocab:persona>
+            </vocab:vendedor_Cedula>
+            <rdfs:label>vendedor #103</rdfs:label>
+            <j.0:vinculacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >8</j.0:vinculacion>
+            <vocab:vendedor_Horas_trabajo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >8</vocab:vendedor_Horas_trabajo>
+          </vocab:vendedor>
+        </vocab:comprador_Vendedor_Cedula>
+        <vocab:comprador_Cedula>
+          <vocab:persona rdf:about="http://localhost:37654/resource/persona/203">
+            <rdfs:label>persona #203</rdfs:label>
+            <vocab:persona_Tipo>C</vocab:persona_Tipo>
+            <vocab:persona_Nombre>Edwin</vocab:persona_Nombre>
+            <vocab:persona_Cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >203</vocab:persona_Cedula>
+          </vocab:persona>
+        </vocab:comprador_Cedula>
+        <rdfs:label>comprador #203</rdfs:label>
+        <vocab:comprador_Direccion>Carrera falsa 123</vocab:comprador_Direccion>
+        <vocab:comprador_Salario rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >7000000</vocab:comprador_Salario>
+      </vocab:comprador>
+    </vocab:carro_Cedula_Comprador>
+    <vocab:carro_Modelo>Vitara</vocab:carro_Modelo>
+    <vocab:carro_Cedula_Vendedor rdf:resource="http://localhost:37654/resource/vendedor/103"/>
+  </vocab:carro>
+  <vocab:carro rdf:about="http://localhost:37654/resource/carro/ASD127">
+    <vocab:carro_Tipo_Combustible>Gasolina</vocab:carro_Tipo_Combustible>
+    <rdfs:label>carro #ASD127</rdfs:label>
+    <vocab:carro_Placa>ASD127</vocab:carro_Placa>
+    <vocab:carro_Cedula_Comprador>
+      <vocab:comprador rdf:about="http://localhost:37654/resource/comprador/205">
+        <vocab:comprador_Vendedor_Cedula>
+          <vocab:vendedor rdf:about="http://localhost:37654/resource/vendedor/105">
+            <vocab:vendedor_Cedula>
+              <vocab:persona rdf:about="http://localhost:37654/resource/persona/105">
+                <rdfs:label>persona #105</rdfs:label>
+                <vocab:persona_Tipo>V</vocab:persona_Tipo>
+                <vocab:persona_Nombre>Lucas</vocab:persona_Nombre>
+                <vocab:persona_Cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                >105</vocab:persona_Cedula>
+              </vocab:persona>
+            </vocab:vendedor_Cedula>
+            <rdfs:label>vendedor #105</rdfs:label>
+            <j.0:vinculacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >13</j.0:vinculacion>
+            <vocab:vendedor_Horas_trabajo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >7</vocab:vendedor_Horas_trabajo>
+          </vocab:vendedor>
+        </vocab:comprador_Vendedor_Cedula>
+        <vocab:comprador_Cedula>
+          <vocab:persona rdf:about="http://localhost:37654/resource/persona/205">
+            <rdfs:label>persona #205</rdfs:label>
+            <vocab:persona_Tipo>C</vocab:persona_Tipo>
+            <vocab:persona_Nombre>Daniel</vocab:persona_Nombre>
+            <vocab:persona_Cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >205</vocab:persona_Cedula>
+          </vocab:persona>
+        </vocab:comprador_Cedula>
+        <rdfs:label>comprador #205</rdfs:label>
+        <vocab:comprador_Direccion>Carrera falsa 3</vocab:comprador_Direccion>
+        <vocab:comprador_Salario rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >7000000</vocab:comprador_Salario>
+      </vocab:comprador>
+    </vocab:carro_Cedula_Comprador>
+    <vocab:carro_Cedula_Vendedor rdf:resource="http://localhost:37654/resource/vendedor/105"/>
+    <vocab:carro_Codigo_Postal_Ciudad rdf:resource="http://localhost:37654/resource/ciudad/1000"/>
+    <vocab:carro_Numero_Puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >2</vocab:carro_Numero_Puertas>
+    <vocab:carro_Modelo>C7</vocab:carro_Modelo>
+    <vocab:carro_ID_Motor>
+      <vocab:motor rdf:about="http://localhost:37654/resource/motor/5">
+        <rdfs:label>motor #5</rdfs:label>
+        <vocab:motor_Desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double"
+        >1400.0E0</vocab:motor_Desplazamiento>
+        <vocab:motor_ID>5</vocab:motor_ID>
+      </vocab:motor>
+    </vocab:carro_ID_Motor>
+    <vocab:carro_NIT_Proveedor rdf:resource="http://localhost:37654/resource/proveedor/1001"/>
+  </vocab:carro>
+</rdf:RDF>
