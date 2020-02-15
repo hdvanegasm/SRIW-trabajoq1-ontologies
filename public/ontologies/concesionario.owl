@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/"
-     xml:base="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/"
+<rdf:RDF xmlns="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/"
+     xml:base="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -8,8 +8,11 @@
      xmlns:obda="https://w3id.org/obda/vocabulary#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:concesionario="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario#/"
-     xmlns:concesionario1="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#">
-    <owl:Ontology rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl"/>
+     xmlns:concesionario1="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#"
+     xmlns:concesionario2="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#">
+    <owl:Ontology rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl">
+        <owl:versionIRI rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl"/>
+    </owl:Ontology>
     
 
 
@@ -24,124 +27,124 @@
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#ensamblado_en -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#ensamblado_en -->
 
-    <owl:ObjectProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#ensamblado_en">
-        <owl:inverseOf rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#lugar_de_ensamblado_de"/>
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
-        <rdfs:range rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Ciudad"/>
+    <owl:ObjectProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#ensamblado_en">
+        <owl:inverseOf rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#lugar_de_ensamblado_de"/>
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <rdfs:range rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Ciudad"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#lugar_de_ensamblado_de -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#lugar_de_ensamblado_de -->
 
-    <owl:ObjectProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#lugar_de_ensamblado_de">
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Ciudad"/>
-        <rdfs:range rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+    <owl:ObjectProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#lugar_de_ensamblado_de">
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Ciudad"/>
+        <rdfs:range rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#motor_de -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#motor_de -->
 
-    <owl:ObjectProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#motor_de">
-        <owl:inverseOf rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#motorizado_por"/>
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Motor"/>
-        <rdfs:range rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+    <owl:ObjectProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#motor_de">
+        <owl:inverseOf rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#motorizado_por"/>
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Motor"/>
+        <rdfs:range rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#motorizado_por -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#motorizado_por -->
 
-    <owl:ObjectProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#motorizado_por">
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
-        <rdfs:range rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Motor"/>
+    <owl:ObjectProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#motorizado_por">
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <rdfs:range rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Motor"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/atendido_por -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/atendido_por -->
 
-    <owl:ObjectProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/atendido_por">
-        <owl:inverseOf rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/atiende"/>
+    <owl:ObjectProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/atendido_por">
+        <owl:inverseOf rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/atiende"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
-        <rdfs:range rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
+        <rdfs:range rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/atiende -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/atiende -->
 
-    <owl:ObjectProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/atiende">
+    <owl:ObjectProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/atiende">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
-        <rdfs:range rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
+        <rdfs:range rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/compra -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/compra -->
 
-    <owl:ObjectProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/compra">
-        <owl:inverseOf rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/comprado_por"/>
+    <owl:ObjectProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/compra">
+        <owl:inverseOf rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/comprado_por"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
-        <rdfs:range rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
+        <rdfs:range rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/comprado_por -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/comprado_por -->
 
-    <owl:ObjectProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/comprado_por">
+    <owl:ObjectProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/comprado_por">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
-        <rdfs:range rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <rdfs:range rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/provee -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/provee -->
 
-    <owl:ObjectProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/provee">
-        <owl:inverseOf rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/proveido_por"/>
+    <owl:ObjectProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/provee">
+        <owl:inverseOf rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/proveido_por"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Proveedor"/>
-        <rdfs:range rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Proveedor"/>
+        <rdfs:range rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/proveido_por -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/proveido_por -->
 
-    <owl:ObjectProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/proveido_por">
+    <owl:ObjectProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/proveido_por">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
-        <rdfs:range rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Proveedor"/>
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <rdfs:range rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Proveedor"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/vende -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/vende -->
 
-    <owl:ObjectProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/vende">
-        <owl:inverseOf rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/vendido_por"/>
+    <owl:ObjectProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/vende">
+        <owl:inverseOf rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/vendido_por"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
-        <rdfs:range rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
+        <rdfs:range rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/vendido_por -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/vendido_por -->
 
-    <owl:ObjectProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/vendido_por">
+    <owl:ObjectProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/vendido_por">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
-        <rdfs:range rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <rdfs:range rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
     </owl:ObjectProperty>
     
 
@@ -157,144 +160,144 @@
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#ciudad_codigo_postal -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#ciudad_codigo_postal -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#ciudad_codigo_postal">
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Ciudad"/>
+    <owl:DatatypeProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#ciudad_codigo_postal">
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Ciudad"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#ciudad_poblacion_total -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#ciudad_poblacion_total -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#ciudad_poblacion_total">
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Ciudad"/>
+    <owl:DatatypeProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#ciudad_poblacion_total">
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Ciudad"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#comprador_direccion -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#comprador_direccion -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#comprador_direccion">
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
+    <owl:DatatypeProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#comprador_direccion">
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#comprador_salario -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#comprador_salario -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#comprador_salario">
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
+    <owl:DatatypeProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#comprador_salario">
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#motor_desplazamiento -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#motor_desplazamiento -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#motor_desplazamiento">
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Motor"/>
+    <owl:DatatypeProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#motor_desplazamiento">
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Motor"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#motor_id -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#motor_id -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#motor_id">
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Motor"/>
+    <owl:DatatypeProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#motor_id">
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Motor"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#persona_cedula -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#persona_cedula -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#persona_cedula">
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Persona"/>
+    <owl:DatatypeProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#persona_cedula">
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Persona"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#persona_nombre -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#persona_nombre -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#persona_nombre">
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Persona"/>
+    <owl:DatatypeProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#persona_nombre">
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Persona"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#vendedor_horas_trabajo -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#vendedor_horas_trabajo -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#vendedor_horas_trabajo">
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
+    <owl:DatatypeProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#vendedor_horas_trabajo">
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#vendedor_meses_vinculacion -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#vendedor_meses_vinculacion -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#vendedor_meses_vinculacion">
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
+    <owl:DatatypeProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#vendedor_meses_vinculacion">
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/carro_modelo -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/carro_modelo -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/carro_modelo">
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+    <owl:DatatypeProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/carro_modelo">
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/carro_numero_puertas -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/carro_numero_puertas -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/carro_numero_puertas">
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+    <owl:DatatypeProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/carro_numero_puertas">
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/carro_placa -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/carro_placa -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/carro_placa">
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+    <owl:DatatypeProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/carro_placa">
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/carro_tipo_combustible -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/carro_tipo_combustible -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/carro_tipo_combustible">
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+    <owl:DatatypeProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/carro_tipo_combustible">
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/proveedor_nit -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/proveedor_nit -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/proveedor_nit">
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Proveedor"/>
+    <owl:DatatypeProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/proveedor_nit">
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Proveedor"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/proveedor_nombre -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/proveedor_nombre -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/proveedor_nombre">
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Proveedor"/>
+    <owl:DatatypeProperty rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/proveedor_nombre">
+        <rdfs:domain rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Proveedor"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -311,48 +314,48 @@
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro -->
 
-    <owl:Class rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+    <owl:Class rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro"/>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Ciudad -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Ciudad -->
 
-    <owl:Class rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Ciudad"/>
+    <owl:Class rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Ciudad"/>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Comprador -->
 
-    <owl:Class rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador">
-        <rdfs:subClassOf rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Persona"/>
+    <owl:Class rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Comprador">
+        <rdfs:subClassOf rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Persona"/>
     </owl:Class>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Motor -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Motor -->
 
-    <owl:Class rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Motor"/>
+    <owl:Class rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Motor"/>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Persona -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Persona -->
 
-    <owl:Class rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Persona"/>
+    <owl:Class rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Persona"/>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Proveedor -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Proveedor -->
 
-    <owl:Class rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Proveedor"/>
+    <owl:Class rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Proveedor"/>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Vendedor -->
 
-    <owl:Class rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor">
-        <rdfs:subClassOf rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Persona"/>
+    <owl:Class rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Vendedor">
+        <rdfs:subClassOf rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Persona"/>
     </owl:Class>
     
 
@@ -368,74 +371,74 @@
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Francfort -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#Francfort -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Francfort">
-        <concesionario1:ciudad_codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50000001</concesionario1:ciudad_codigo_postal>
-        <concesionario1:ciudad_poblacion_total rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000000</concesionario1:ciudad_poblacion_total>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#Francfort">
+        <concesionario2:ciudad_codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50000001</concesionario2:ciudad_codigo_postal>
+        <concesionario2:ciudad_poblacion_total rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000000</concesionario2:ciudad_poblacion_total>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Hamburgo -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#Hamburgo -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Hamburgo">
-        <concesionario1:ciudad_codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50000002</concesionario1:ciudad_codigo_postal>
-        <concesionario1:ciudad_poblacion_total rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3400000</concesionario1:ciudad_poblacion_total>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#Hamburgo">
+        <concesionario2:ciudad_codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50000002</concesionario2:ciudad_codigo_postal>
+        <concesionario2:ciudad_poblacion_total rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3400000</concesionario2:ciudad_poblacion_total>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Medellin -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#Medellin -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Medellin">
-        <concesionario1:ciudad_codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50000003</concesionario1:ciudad_codigo_postal>
-        <concesionario1:ciudad_poblacion_total rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000000</concesionario1:ciudad_poblacion_total>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#Medellin">
+        <concesionario2:ciudad_codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50000003</concesionario2:ciudad_codigo_postal>
+        <concesionario2:ciudad_poblacion_total rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000000</concesionario2:ciudad_poblacion_total>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Milan -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#Milan -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Milan">
-        <concesionario1:ciudad_codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50000004</concesionario1:ciudad_codigo_postal>
-        <concesionario1:ciudad_poblacion_total rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">450000</concesionario1:ciudad_poblacion_total>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#Milan">
+        <concesionario2:ciudad_codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50000004</concesionario2:ciudad_codigo_postal>
+        <concesionario2:ciudad_poblacion_total rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">450000</concesionario2:ciudad_poblacion_total>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Munich -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#Munich -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Munich">
-        <concesionario1:ciudad_codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50000005</concesionario1:ciudad_codigo_postal>
-        <concesionario1:ciudad_poblacion_total rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40000</concesionario1:ciudad_poblacion_total>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#Munich">
+        <concesionario2:ciudad_codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50000005</concesionario2:ciudad_codigo_postal>
+        <concesionario2:ciudad_poblacion_total rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40000</concesionario2:ciudad_poblacion_total>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#NuevaYork -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#NuevaYork -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#NuevaYork">
-        <concesionario1:ciudad_codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50000006</concesionario1:ciudad_codigo_postal>
-        <concesionario1:ciudad_poblacion_total rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600000</concesionario1:ciudad_poblacion_total>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#NuevaYork">
+        <concesionario2:ciudad_codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50000006</concesionario2:ciudad_codigo_postal>
+        <concesionario2:ciudad_poblacion_total rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600000</concesionario2:ciudad_poblacion_total>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#SanFrancisco -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#SanFrancisco -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#SanFrancisco">
-        <concesionario1:ciudad_codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50000007</concesionario1:ciudad_codigo_postal>
-        <concesionario1:ciudad_poblacion_total rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130000</concesionario1:ciudad_poblacion_total>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#SanFrancisco">
+        <concesionario2:ciudad_codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50000007</concesionario2:ciudad_codigo_postal>
+        <concesionario2:ciudad_poblacion_total rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130000</concesionario2:ciudad_poblacion_total>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Skyline1 -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#Skyline1 -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Skyline1">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
-        <owl:sameAs rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Skyline"/>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#Skyline1">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <owl:sameAs rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Skyline"/>
         <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</carro_modelo>
         <carro_numero_puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</carro_numero_puertas>
         <carro_placa rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UAS131</carro_placa>
@@ -444,110 +447,110 @@
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#TaunusV4 -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#TaunusV4 -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#TaunusV4">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Motor"/>
-        <concesionario1:motor_desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double">12.0</concesionario1:motor_desplazamiento>
-        <concesionario1:motor_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13241213</concesionario1:motor_id>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#TaunusV4">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Motor"/>
+        <concesionario2:motor_desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double">12.0</concesionario2:motor_desplazamiento>
+        <concesionario2:motor_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13241213</concesionario2:motor_id>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V10 -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#V10 -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V10">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Motor"/>
-        <concesionario1:motor_desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double">23.0</concesionario1:motor_desplazamiento>
-        <concesionario1:motor_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12351235</concesionario1:motor_id>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#V10">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Motor"/>
+        <concesionario2:motor_desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double">23.0</concesionario2:motor_desplazamiento>
+        <concesionario2:motor_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12351235</concesionario2:motor_id>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V12 -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#V12 -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V12">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Motor"/>
-        <concesionario1:motor_desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double">14.0</concesionario1:motor_desplazamiento>
-        <concesionario1:motor_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4352214</concesionario1:motor_id>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#V12">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Motor"/>
+        <concesionario2:motor_desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double">14.0</concesionario2:motor_desplazamiento>
+        <concesionario2:motor_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4352214</concesionario2:motor_id>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V4 -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#V4 -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V4">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Motor"/>
-        <concesionario1:motor_desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double">23.0</concesionario1:motor_desplazamiento>
-        <concesionario1:motor_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">523514</concesionario1:motor_id>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#V4">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Motor"/>
+        <concesionario2:motor_desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double">23.0</concesionario2:motor_desplazamiento>
+        <concesionario2:motor_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">523514</concesionario2:motor_id>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V8 -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#V8 -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V8">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Motor"/>
-        <concesionario1:motor_desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double">33.0</concesionario1:motor_desplazamiento>
-        <concesionario1:motor_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">523451234</concesionario1:motor_id>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#V8">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Motor"/>
+        <concesionario2:motor_desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double">33.0</concesionario2:motor_desplazamiento>
+        <concesionario2:motor_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">523451234</concesionario2:motor_id>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V8SuperCargado -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#V8SuperCargado -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V8SuperCargado">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Motor"/>
-        <concesionario1:motor_desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double">34.0</concesionario1:motor_desplazamiento>
-        <concesionario1:motor_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5234134</concesionario1:motor_id>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#V8SuperCargado">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Motor"/>
+        <concesionario2:motor_desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double">34.0</concesionario2:motor_desplazamiento>
+        <concesionario2:motor_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5234134</concesionario2:motor_id>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#W16 -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#W16 -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#W16">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Motor"/>
-        <concesionario1:motor_desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double">12.0</concesionario1:motor_desplazamiento>
-        <concesionario1:motor_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4251324</concesionario1:motor_id>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#W16">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Motor"/>
+        <concesionario2:motor_desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double">12.0</concesionario2:motor_desplazamiento>
+        <concesionario2:motor_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4251324</concesionario2:motor_id>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Alberto -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Alberto -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Alberto">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
-        <compra rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Chevette"/>
-        <concesionario1:comprador_direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calle 3</concesionario1:comprador_direccion>
-        <concesionario1:comprador_salario rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</concesionario1:comprador_salario>
-        <concesionario1:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3871</concesionario1:persona_cedula>
-        <concesionario1:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</concesionario1:persona_nombre>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Alberto">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
+        <compra rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Chevette"/>
+        <concesionario2:comprador_direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calle 3</concesionario2:comprador_direccion>
+        <concesionario2:comprador_salario rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</concesionario2:comprador_salario>
+        <concesionario2:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3871</concesionario2:persona_cedula>
+        <concesionario2:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</concesionario2:persona_nombre>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Andres -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Andres -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Andres">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
-        <compra rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Camaro"/>
-        <concesionario1:comprador_direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calle 1</concesionario1:comprador_direccion>
-        <concesionario1:comprador_salario rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12780000</concesionario1:comprador_salario>
-        <concesionario1:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">324719234</concesionario1:persona_cedula>
-        <concesionario1:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andres</concesionario1:persona_nombre>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Andres">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
+        <compra rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Camaro"/>
+        <concesionario2:comprador_direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calle 1</concesionario2:comprador_direccion>
+        <concesionario2:comprador_salario rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12780000</concesionario2:comprador_salario>
+        <concesionario2:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">324719234</concesionario2:persona_cedula>
+        <concesionario2:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andres</concesionario2:persona_nombre>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Camaro -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Camaro -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Camaro">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
-        <owl:sameAs rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Camaro1"/>
-        <concesionario1:ensamblado_en rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Francfort"/>
-        <concesionario1:motorizado_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V8"/>
-        <proveido_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Chevrolet"/>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Camaro">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <owl:sameAs rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Camaro1"/>
+        <concesionario2:ensamblado_en rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#Francfort"/>
+        <concesionario2:motorizado_por rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#V8"/>
+        <proveido_por rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Chevrolet"/>
         <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</carro_modelo>
         <carro_numero_puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</carro_numero_puertas>
         <carro_placa rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAJ213</carro_placa>
@@ -556,11 +559,11 @@
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Camaro1 -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Camaro1 -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Camaro1">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
-        <proveido_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Chevrolet"/>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Camaro1">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <proveido_por rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Chevrolet"/>
         <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</carro_modelo>
         <carro_numero_puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</carro_numero_puertas>
         <carro_placa rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAJ213</carro_placa>
@@ -569,26 +572,26 @@
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Camilo -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Camilo -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Camilo">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
-        <compra rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Mustang"/>
-        <concesionario1:comprador_direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calle 54</concesionario1:comprador_direccion>
-        <concesionario1:comprador_salario rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34200000</concesionario1:comprador_salario>
-        <concesionario1:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3412314</concesionario1:persona_cedula>
-        <concesionario1:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Camilo</concesionario1:persona_nombre>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Camilo">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
+        <compra rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Mustang"/>
+        <concesionario2:comprador_direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calle 54</concesionario2:comprador_direccion>
+        <concesionario2:comprador_salario rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34200000</concesionario2:comprador_salario>
+        <concesionario2:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3412314</concesionario2:persona_cedula>
+        <concesionario2:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Camilo</concesionario2:persona_nombre>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Chevette -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Chevette -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Chevette">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
-        <concesionario1:ensamblado_en rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Hamburgo"/>
-        <concesionario1:motorizado_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#TaunusV4"/>
-        <proveido_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Chevrolet"/>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Chevette">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <concesionario2:ensamblado_en rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#Hamburgo"/>
+        <concesionario2:motorizado_por rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#TaunusV4"/>
+        <proveido_por rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Chevrolet"/>
         <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1997</carro_modelo>
         <carro_numero_puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</carro_numero_puertas>
         <carro_placa rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ASI219</carro_placa>
@@ -597,25 +600,25 @@
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Chevrolet -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Chevrolet -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Chevrolet">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Proveedor"/>
-        <provee rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Camaro"/>
-        <provee rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Chevette"/>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Chevrolet">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Proveedor"/>
+        <provee rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Camaro"/>
+        <provee rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Chevette"/>
         <proveedor_nit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">47512</proveedor_nit>
         <proveedor_nombre>Chevrolet</proveedor_nombre>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Civic -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Civic -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Civic">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
-        <concesionario1:ensamblado_en rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Medellin"/>
-        <concesionario1:motorizado_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V10"/>
-        <proveido_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Honda"/>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Civic">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <concesionario2:ensamblado_en rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#Medellin"/>
+        <concesionario2:motorizado_por rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#V10"/>
+        <proveido_por rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Honda"/>
         <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2007</carro_modelo>
         <carro_numero_puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</carro_numero_puertas>
         <carro_placa rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EIR127</carro_placa>
@@ -624,150 +627,150 @@
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Cristina -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Cristina -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Cristina">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
-        <compra rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Civic"/>
-        <concesionario1:comprador_direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calle 8</concesionario1:comprador_direccion>
-        <concesionario1:comprador_salario rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19000000</concesionario1:comprador_salario>
-        <concesionario1:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1398</concesionario1:persona_cedula>
-        <concesionario1:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cristina</concesionario1:persona_nombre>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Cristina">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
+        <compra rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Civic"/>
+        <concesionario2:comprador_direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calle 8</concesionario2:comprador_direccion>
+        <concesionario2:comprador_salario rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19000000</concesionario2:comprador_salario>
+        <concesionario2:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1398</concesionario2:persona_cedula>
+        <concesionario2:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cristina</concesionario2:persona_nombre>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Daniel -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Daniel -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Daniel">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
-        <compra rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Murcielago"/>
-        <concesionario1:comprador_direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calle 10</concesionario1:comprador_direccion>
-        <concesionario1:comprador_salario rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000000</concesionario1:comprador_salario>
-        <concesionario1:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1231</concesionario1:persona_cedula>
-        <concesionario1:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daniel</concesionario1:persona_nombre>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Daniel">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
+        <compra rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Murcielago"/>
+        <concesionario2:comprador_direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calle 10</concesionario2:comprador_direccion>
+        <concesionario2:comprador_salario rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000000</concesionario2:comprador_salario>
+        <concesionario2:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1231</concesionario2:persona_cedula>
+        <concesionario2:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daniel</concesionario2:persona_nombre>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Edwin -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Edwin -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Edwin">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
-        <compra rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Skyline"/>
-        <concesionario1:comprador_direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calle 13</concesionario1:comprador_direccion>
-        <concesionario1:comprador_salario rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12388800</concesionario1:comprador_salario>
-        <concesionario1:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">121442</concesionario1:persona_cedula>
-        <concesionario1:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edwin</concesionario1:persona_nombre>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Edwin">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
+        <compra rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Skyline"/>
+        <concesionario2:comprador_direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calle 13</concesionario2:comprador_direccion>
+        <concesionario2:comprador_salario rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12388800</concesionario2:comprador_salario>
+        <concesionario2:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">121442</concesionario2:persona_cedula>
+        <concesionario2:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edwin</concesionario2:persona_nombre>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Felipe -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Felipe -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Felipe">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
-        <compra rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Renault9"/>
-        <concesionario1:comprador_direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calle 32</concesionario1:comprador_direccion>
-        <concesionario1:comprador_salario rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000000</concesionario1:comprador_salario>
-        <concesionario1:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">34123411</concesionario1:persona_cedula>
-        <concesionario1:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felipe</concesionario1:persona_nombre>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Felipe">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
+        <compra rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Renault9"/>
+        <concesionario2:comprador_direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calle 32</concesionario2:comprador_direccion>
+        <concesionario2:comprador_salario rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000000</concesionario2:comprador_salario>
+        <concesionario2:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">34123411</concesionario2:persona_cedula>
+        <concesionario2:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felipe</concesionario2:persona_nombre>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Ford -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Ford -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Ford">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Proveedor"/>
-        <provee rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Mustang"/>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Ford">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Proveedor"/>
+        <provee rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Mustang"/>
         <proveedor_nit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">124410</proveedor_nit>
         <proveedor_nombre>Ford</proveedor_nombre>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Hernan -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Hernan -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Hernan">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
-        <vende rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Civic"/>
-        <concesionario1:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">114134</concesionario1:persona_cedula>
-        <concesionario1:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hernan</concesionario1:persona_nombre>
-        <concesionario1:vendedor_horas_trabajo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</concesionario1:vendedor_horas_trabajo>
-        <concesionario1:vendedor_meses_vinculacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</concesionario1:vendedor_meses_vinculacion>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Hernan">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
+        <vende rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Civic"/>
+        <concesionario2:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">114134</concesionario2:persona_cedula>
+        <concesionario2:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hernan</concesionario2:persona_nombre>
+        <concesionario2:vendedor_horas_trabajo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</concesionario2:vendedor_horas_trabajo>
+        <concesionario2:vendedor_meses_vinculacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</concesionario2:vendedor_meses_vinculacion>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Honda -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Honda -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Honda">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Proveedor"/>
-        <provee rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Civic"/>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Honda">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Proveedor"/>
+        <provee rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Civic"/>
         <proveedor_nit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34721</proveedor_nit>
         <proveedor_nombre>Honda</proveedor_nombre>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Jacinto -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Jacinto -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Jacinto">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
-        <vende rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Chevette"/>
-        <concesionario1:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41234</concesionario1:persona_cedula>
-        <concesionario1:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jacinto</concesionario1:persona_nombre>
-        <concesionario1:vendedor_horas_trabajo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</concesionario1:vendedor_horas_trabajo>
-        <concesionario1:vendedor_meses_vinculacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</concesionario1:vendedor_meses_vinculacion>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Jacinto">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
+        <vende rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Chevette"/>
+        <concesionario2:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41234</concesionario2:persona_cedula>
+        <concesionario2:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jacinto</concesionario2:persona_nombre>
+        <concesionario2:vendedor_horas_trabajo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</concesionario2:vendedor_horas_trabajo>
+        <concesionario2:vendedor_meses_vinculacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</concesionario2:vendedor_meses_vinculacion>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Jose -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Jose -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Jose">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
-        <vende rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Camaro"/>
-        <concesionario1:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12341</concesionario1:persona_cedula>
-        <concesionario1:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jose</concesionario1:persona_nombre>
-        <concesionario1:vendedor_horas_trabajo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</concesionario1:vendedor_horas_trabajo>
-        <concesionario1:vendedor_meses_vinculacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</concesionario1:vendedor_meses_vinculacion>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Jose">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
+        <vende rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Camaro"/>
+        <concesionario2:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12341</concesionario2:persona_cedula>
+        <concesionario2:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jose</concesionario2:persona_nombre>
+        <concesionario2:vendedor_horas_trabajo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</concesionario2:vendedor_horas_trabajo>
+        <concesionario2:vendedor_meses_vinculacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</concesionario2:vendedor_meses_vinculacion>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Lamborgini -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Lamborgini -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Lamborgini">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Proveedor"/>
-        <provee rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Murcielago"/>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Lamborgini">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Proveedor"/>
+        <provee rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Murcielago"/>
         <proveedor_nit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2139128</proveedor_nit>
         <proveedor_nombre>Lamborgini</proveedor_nombre>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Miguel -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Miguel -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Miguel">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
-        <vende rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Murcielago"/>
-        <concesionario1:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">413241234</concesionario1:persona_cedula>
-        <concesionario1:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miguel</concesionario1:persona_nombre>
-        <concesionario1:vendedor_horas_trabajo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</concesionario1:vendedor_horas_trabajo>
-        <concesionario1:vendedor_meses_vinculacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</concesionario1:vendedor_meses_vinculacion>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Miguel">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
+        <vende rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Murcielago"/>
+        <concesionario2:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">413241234</concesionario2:persona_cedula>
+        <concesionario2:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miguel</concesionario2:persona_nombre>
+        <concesionario2:vendedor_horas_trabajo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</concesionario2:vendedor_horas_trabajo>
+        <concesionario2:vendedor_meses_vinculacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</concesionario2:vendedor_meses_vinculacion>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Murcielago -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Murcielago -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Murcielago">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
-        <concesionario1:ensamblado_en rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Milan"/>
-        <concesionario1:motorizado_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V12"/>
-        <proveido_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Lamborgini"/>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Murcielago">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <concesionario2:ensamblado_en rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#Milan"/>
+        <concesionario2:motorizado_por rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#V12"/>
+        <proveido_por rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Lamborgini"/>
         <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</carro_modelo>
         <carro_numero_puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</carro_numero_puertas>
         <carro_placa rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LKJ141</carro_placa>
@@ -776,14 +779,14 @@
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Mustang -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Mustang -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Mustang">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
-        <owl:sameAs rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Mustang1"/>
-        <concesionario1:ensamblado_en rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Munich"/>
-        <concesionario1:motorizado_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V8SuperCargado"/>
-        <proveido_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Ford"/>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Mustang">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <owl:sameAs rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Mustang1"/>
+        <concesionario2:ensamblado_en rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#Munich"/>
+        <concesionario2:motorizado_por rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#V8SuperCargado"/>
+        <proveido_por rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Ford"/>
         <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</carro_modelo>
         <carro_numero_puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</carro_numero_puertas>
         <carro_placa rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KDF341</carro_placa>
@@ -792,11 +795,11 @@
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Mustang1 -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Mustang1 -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Mustang1">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
-        <proveido_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Ford"/>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Mustang1">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <proveido_por rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Ford"/>
         <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</carro_modelo>
         <carro_numero_puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</carro_numero_puertas>
         <carro_placa rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KDF341</carro_placa>
@@ -805,61 +808,61 @@
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Nissan -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Nissan -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Nissan">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Proveedor"/>
-        <provee rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Skyline"/>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Nissan">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Proveedor"/>
+        <provee rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Skyline"/>
         <proveedor_nit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">742918</proveedor_nit>
         <proveedor_nombre>Nissan</proveedor_nombre>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Pablo -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Pablo -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Pablo">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
-        <vende rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Mustang"/>
-        <concesionario1:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41541</concesionario1:persona_cedula>
-        <concesionario1:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pablo</concesionario1:persona_nombre>
-        <concesionario1:vendedor_horas_trabajo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</concesionario1:vendedor_horas_trabajo>
-        <concesionario1:vendedor_meses_vinculacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</concesionario1:vendedor_meses_vinculacion>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Pablo">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
+        <vende rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Mustang"/>
+        <concesionario2:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41541</concesionario2:persona_cedula>
+        <concesionario2:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pablo</concesionario2:persona_nombre>
+        <concesionario2:vendedor_horas_trabajo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</concesionario2:vendedor_horas_trabajo>
+        <concesionario2:vendedor_meses_vinculacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</concesionario2:vendedor_meses_vinculacion>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Pedro -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Pedro -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Pedro">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
-        <vende rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Renault9"/>
-        <concesionario1:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3491827</concesionario1:persona_cedula>
-        <concesionario1:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pedro</concesionario1:persona_nombre>
-        <concesionario1:vendedor_meses_vinculacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</concesionario1:vendedor_meses_vinculacion>
-        <concesionario1:vendedor_meses_vinculacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</concesionario1:vendedor_meses_vinculacion>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Pedro">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
+        <vende rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Renault9"/>
+        <concesionario2:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3491827</concesionario2:persona_cedula>
+        <concesionario2:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pedro</concesionario2:persona_nombre>
+        <concesionario2:vendedor_meses_vinculacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</concesionario2:vendedor_meses_vinculacion>
+        <concesionario2:vendedor_meses_vinculacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</concesionario2:vendedor_meses_vinculacion>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Renault -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Renault -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Renault">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Proveedor"/>
-        <provee rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Renault9"/>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Renault">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Proveedor"/>
+        <provee rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Renault9"/>
         <proveedor_nit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">324132</proveedor_nit>
         <proveedor_nombre>Renault</proveedor_nombre>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Renault9 -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Renault9 -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Renault9">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
-        <concesionario1:ensamblado_en rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#NuevaYork"/>
-        <concesionario1:motorizado_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V4"/>
-        <proveido_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Renault"/>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Renault9">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <concesionario2:ensamblado_en rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#NuevaYork"/>
+        <concesionario2:motorizado_por rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#V4"/>
+        <proveido_por rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Renault"/>
         <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</carro_modelo>
         <carro_numero_puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</carro_numero_puertas>
         <carro_placa rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HAS823</carro_placa>
@@ -868,25 +871,25 @@
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Santiago -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Santiago -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Santiago">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
-        <vende rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Skyline"/>
-        <concesionario1:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">134214412</concesionario1:persona_cedula>
-        <concesionario1:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Santiago</concesionario1:persona_nombre>
-        <concesionario1:vendedor_horas_trabajo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</concesionario1:vendedor_horas_trabajo>
-        <concesionario1:vendedor_meses_vinculacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</concesionario1:vendedor_meses_vinculacion>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Santiago">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
+        <vende rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Skyline"/>
+        <concesionario2:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">134214412</concesionario2:persona_cedula>
+        <concesionario2:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Santiago</concesionario2:persona_nombre>
+        <concesionario2:vendedor_horas_trabajo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</concesionario2:vendedor_horas_trabajo>
+        <concesionario2:vendedor_meses_vinculacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</concesionario2:vendedor_meses_vinculacion>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Skyline -->
+    <!-- https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Skyline -->
 
-    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Skyline">
-        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
-        <concesionario1:ensamblado_en rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#SanFrancisco"/>
-        <concesionario1:motorizado_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#W16"/>
+    <owl:NamedIndividual rdf:about="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Skyline">
+        <rdf:type rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <concesionario2:ensamblado_en rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#SanFrancisco"/>
+        <concesionario2:motorizado_por rdf:resource="https://sriw-trabajo1-ontologies.herokuapp.com/ontologies/concesionario.owl#W16"/>
         <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</carro_modelo>
         <carro_numero_puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</carro_numero_puertas>
         <carro_placa rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UAS131</carro_placa>
